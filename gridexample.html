@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid example</title>
+    <style>
+        .main{
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 200 1fr 1fr;
+            grid-template-rows: 100px 200px 200px 100px;
+            gap: 10px;
+        }
+        header{
+            background-color: red;
+            grid-column: 1/4;
+            text-align: center;
+            color: white;
+            text-transform: capitalize;
+            font-size: 40px;
+            border-radius: 10px;
+        }
+        aside{
+            background-color: orange;
+            grid-row: 2/4;
+            text-align: center;
+            text-transform: capitalize;
+            color: white;
+            font-size: 40px;
+            border-radius: 10px;
+        }
+        #box1{
+            background-color: blueviolet;
+            grid-column: 2/4;
+             text-align: center;
+            text-transform: capitalize;
+            color: white;
+            font-size: 40px;
+            border-radius: 10px;
+        }
+        #box2{
+            background-color: hotpink;
+            border-radius: 10px;
+        }
+        #box3{
+            background-color: darkslateblue;
+            border-radius: 10px;
+        }
+        footer{
+            background-color: darkcyan;
+            grid-column: 1/4;
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 40px;
+            border: 2px solid;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+       <header>header</header>
+        <aside>sidebar</aside>
+        <div id="box1">content1</div>
+        <div id="box2">content2</div>
+        <div id="box3">content3</div>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>
